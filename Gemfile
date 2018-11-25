@@ -7,6 +7,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem "rails", "~> 5.2.1"
 gem "awesome_print"
 gem "carrierwave"
+gem "rails-controller-testing"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3"
 # Use Puma as the app server
