@@ -56,8 +56,10 @@ en:
       editing_book: Editing Book
       show: Show
       back: Back
-    form:
-      title: Title
-      memo: Memo
-      author: Author
-      picture: Picture
+  activerecord:
+    attributes:
+      book:
+        title: Title
+        memo: Memo
+        author: Author
+        picture: Picture

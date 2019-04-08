@@ -24,8 +24,10 @@ ja:
       editing_book: 登録内容の編集
       show: 詳細
       back: 戻る
-    form:
-      title: タイトル
-      memo: メモ
-      author: 著者
-      picture: 写真
+  activerecord:
+    attributes:
+      book:
+        title: タイトル
+        memo: メモ
+        author: 著者
+        picture: 写真
