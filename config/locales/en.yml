@@ -31,3 +31,35 @@
 
 en:
   hello: "Hello world"
+  books:
+    index:
+      books: Books
+      title: Title
+      memo: Mome
+      author: Author
+      picture: Picture
+      show: Show
+      edit: Edit
+      destroy: Destroy
+      new: New
+    show:
+      title: Title
+      memo: Memo
+      author: Author
+      picture: Picture
+      edit: Edit
+      back: Back
+    new:
+      new_book: New Book
+      back: Back
+    edit:
+      editing_book: Editing Book
+      show: Show
+      back: Back
+  activerecord:
+    attributes:
+      book:
+        title: Title
+        memo: Memo
+        author: Author
+        picture: Picture
