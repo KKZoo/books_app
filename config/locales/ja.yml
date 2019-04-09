@@ -1,4 +1,4 @@
-ja:
+ ja:
   books:
     index:
       books: 本
@@ -31,3 +31,10 @@ ja:
         memo: メモ
         author: 著者
         picture: 写真
+  views:
+    pagination:
+      first: 最初へ
+      last: 最後へ
+      previous: 前へ
+      next: 次へ
+      truncate: 中略
