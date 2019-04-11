@@ -46,12 +46,16 @@ RSpec.describe "book", type: :feature do
   end
 
   scenario "kaminariの実装テスト" do
-    book = Book.create(title: "test1", memo: "This is test1", author: "KKZoo1")
-    book = Book.create(title: "test2", memo: "This is test2", author: "KKZoo2")
+    last_number = 0
+    11.times do |data_number|
+      book = Book.create(title: "test#{data_number}", memo: "This is test#{data_number}", author: "KKZoo#{data_number}")
+      last_number = data_number
+    end
+
     visit root_path
     click_on "2"
-    expect(page).to have_content "test2"
-    expect(page).to have_content "This is test2"
-    expect(page).to have_content "KKZoo2"
+    expect(page).to have_content "test#{last_number}"
+    expect(page).to have_content "This is test#{last_number}"
+    expect(page).to have_content "KKZoo#{last_number}"
   end
 end
