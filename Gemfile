@@ -8,6 +8,7 @@ gem "rails", "~> 5.2.1"
 gem "awesome_print"
 gem "carrierwave"
 gem "rails-controller-testing"
+gem "kaminari"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3"
 # Use Puma as the app server

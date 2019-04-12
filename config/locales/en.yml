@@ -63,3 +63,10 @@ en:
         memo: Memo
         author: Author
         picture: Picture
+  views:
+    pagination:
+      first: First
+      last: Last
+      previous: Previous
+      next: Next
+      truncate: Truncate

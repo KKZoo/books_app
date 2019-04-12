@@ -44,4 +44,18 @@ RSpec.describe "book", type: :feature do
     expect(page).to have_no_content "This is test"
     expect(page).to have_no_content "KKZoo"
   end
+
+  scenario "kaminariの実装テスト" do
+    last_number = 0
+    11.times do |data_number|
+      book = Book.create(title: "test#{data_number}", memo: "This is test#{data_number}", author: "KKZoo#{data_number}")
+      last_number = data_number
+    end
+
+    visit root_path
+    click_on "2"
+    expect(page).to have_content "test#{last_number}"
+    expect(page).to have_content "This is test#{last_number}"
+    expect(page).to have_content "KKZoo#{last_number}"
+  end
 end
