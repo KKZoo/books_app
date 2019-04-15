@@ -10,6 +10,8 @@ ja:
       edit: 編集
       destroy: 削除
       new: 新規作成
+      users_edit: ユーザー編集
+      sign_out: ログアウト
     show:
       title: タイトル
       memo: メモ

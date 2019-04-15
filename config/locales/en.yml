@@ -42,6 +42,8 @@ en:
       edit: Edit
       destroy: Destroy
       new: New
+      users_edit: Edit User
+      sign_out: Sign Out
     show:
       title: Title
       memo: Memo
@@ -70,3 +72,4 @@ en:
       previous: Previous
       next: Next
       truncate: Truncate
+
