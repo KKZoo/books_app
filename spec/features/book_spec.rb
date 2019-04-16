@@ -3,6 +3,11 @@
 require "rails_helper"
 
 RSpec.describe "book", type: :feature do
+  before do
+    @user = create(:user)
+    sign_in @user
+  end
+
   scenario "New Bookのテスト" do
     visit root_path
     click_on I18n.t("books.index.new")
