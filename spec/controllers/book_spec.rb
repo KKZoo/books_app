@@ -3,6 +3,11 @@
 require "rails_helper"
 
 RSpec.describe BooksController, type: :controller do
+  before do
+    @user = create(:user)
+    sign_in @user
+  end
+
   describe "index" do
     example "indexがレスポンスを返す" do
       get :index

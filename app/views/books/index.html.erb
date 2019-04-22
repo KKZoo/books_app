@@ -1,7 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= t('.books') %></h1>
+<%= link_to t('.sign_out'), destroy_user_session_path %>
+<%= link_to t('.users_edit'), edit_user_registration_path%>
 
+<h1><%= t('.books') %></h1>
 <table>
   <thead>
     <tr>
@@ -31,3 +33,4 @@
 <%= link_to t('.new'), new_book_path %>
 
 <%= paginate @books %>
+
