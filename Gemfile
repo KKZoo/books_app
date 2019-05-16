@@ -12,6 +12,9 @@ gem "kaminari"
 gem "devise"
 gem "devise-i18n"
 gem "factory_bot_rails"
+gem "omniauth"
+gem "omniauth-github"
+gem "dotenv-rails"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3"
 # Use Puma as the app server
