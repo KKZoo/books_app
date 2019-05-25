@@ -63,4 +63,11 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include Devise::Test::IntegrationHelpers, type: :feature
+  # OmniAuthのテストを有効化
+  OmniAuth.config.test_mode = true
+
+  OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new(
+    provider: "github",
+    uid: "1234567"
+  )
 end
