@@ -32,3 +32,6 @@
 
 # .envファイルを無視
 .env
+
+# uploads/books/picture内の画像ファイルを無視
+/public/uploads/book/picture/*
