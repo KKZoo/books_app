@@ -3,6 +3,13 @@
 <%= link_to t('.sign_out'), destroy_user_session_path %>
 <%= link_to t('.users_edit'), edit_user_registration_path%>
 
+<% if current_user.image.attached? %>
+  <%= image_tag(current_user.image, :size => "80x80") %>
+<% elsif current_user.image_url? %>
+  <%= image_tag(current_user.image_url, :size => "80x80") %>
+<% end %>
+
+
 <h1><%= t('.books') %></h1>
 <table>
   <thead>
